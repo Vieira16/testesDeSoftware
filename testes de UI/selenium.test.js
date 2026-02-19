@@ -6,8 +6,6 @@ const iniciarTeste = async () => {
     await driver.   get('https://www.google.com/')
 
     const inputs = await driver.findElements(By.css, ("textarea"));
-    await inputs[0].sendKeys("Senai");
-    await inputs[0].sendKeys(Key.RETURN);
 
 await driver.close();
 
